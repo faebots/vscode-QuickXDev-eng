@@ -1,20 +1,20 @@
 {
-    "name": "vscode-quickxdev",
-    "displayName": "QuickXDev",
-    "description": "Quick-Cocos2dx develop for vscode",
+    "name": "vscode-quickxdev-eng",
+    "displayName": "QuickXDev English",
+    "description": "Quick-Cocos2dx develop for vscode (CN->EN machine translation)",
     "version": "0.1.0",
-    "publisher": "lonewolf",
+    "publisher": "faebots",
     "engines": {
         "vscode": "^1.25.0"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/leitwolf/vscode-QuickXDev.git"
+        "url": "https://github.com/faebots/vscode-QuickXDev-eng.git"
     },
     "bugs": {
-        "url": "https://github.com/leitwolf/vscode-QuickXDev/issues"
+        "url": "https://github.com/faebots/vscode-QuickXDev-eng/issues"
     },
-    "homepage": "https://github.com/leitwolf/vscode-QuickXDev/blob/master/README.md",
+    "homepage": "https://github.com/faebots/vscode-QuickXDev-eng/blob/master/README.md",
     "keywords": [
         "lua",
         "quick cocos2dx"
@@ -31,13 +31,13 @@
     "contributes": {
         "configuration": {
             "type": "Object",
-            "title": "QuickXDev 配置",
+            "title": "QuickXDev Configuration",
             "properties": {
                 "quickxdev.root": {
                     "scope": "resource",
                     "type": "string",
                     "default": null,
-                    "description": "Quick-Cocos2dx 根目录，通常会自动获取"
+                    "description": "Quick-Cocos2dx root directory, which is usually automatically fetched"
                 }
             }
         },
@@ -52,7 +52,7 @@
         },
         "commands": [
             {
-                "title": "在 Player 中运行",
+                "title": "Run in Player",
                 "command": "quickxdev.runPlayer"
             }
         ],

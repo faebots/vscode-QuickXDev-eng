@@ -117,7 +117,7 @@ function runPlayer() {
         playerProcess = null;
     }
     if (!quickRoot) {
-        window.showErrorMessage("没有设置QuickX目录");
+        window.showErrorMessage("No QuickX directory set up");
         return;
     }
 
@@ -138,9 +138,9 @@ function runPlayer() {
 
     client.sendRequest("isQuickX").then((isQuickX: boolean) => {
         if (!isQuickX) {
-            let msg = "非 quick 项目下不能运行 Player！";
+            let msg = "Player cannot be run under a non-quick project!";
             if (isVersion4) {
-                msg = "非 quick 项目下不能运行 LuaGameRunner！";
+                msg = "LuaGameRunner cannot be run under a non-quick project!";
             }
             window.showErrorMessage(msg);
             return;
@@ -164,12 +164,12 @@ function doRunPlayer(workDirUri: Uri) {
         playerPath += "player3.app/Contents/MacOS/player3";
     }
     else {
-        window.showErrorMessage("抱歉，不支持当前制作系统!");
+        window.showErrorMessage("Sorry, the current production system is not supported!");
         return;
     }
 
     if (!existsSync(new URL(playerPath))) {
-        window.showErrorMessage("Player不存在");
+        window.showErrorMessage("Player does not exist");
         return;
     }
 
@@ -213,12 +213,12 @@ function doRunGameRunner(workDirUri: Uri) {
         runnerPath += "LuaGameRunner.app/Contents/MacOS/LuaGameRunner";
     }
     else {
-        window.showErrorMessage("抱歉，不支持当前制作系统!");
+        window.showErrorMessage("Sorry, the current production system is not supported!");
         return;
     }
 
     if (!existsSync(new URL(runnerPath))) {
-        window.showErrorMessage("LuaGameRunner不存在");
+        window.showErrorMessage("LuaGameRunner does not exist");
         return;
     }
 

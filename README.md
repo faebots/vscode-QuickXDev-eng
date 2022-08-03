@@ -1,37 +1,42 @@
-# vscode版QuickXDev
-强大的quick-cocos2dx开发工具，目前适配 Quick-Cocos2dx-Community 3.7.x版及部分适配Cocos2d-Lua-Community 4.0版。
+# Translation Notes
+This repo is an English language fork of [vscode-quickxdev](https://github.com/leitwolf/vscode-QuickXDev). Currently all translations are machine translated via [DeepL](https://www.deepl.com). Any code/functionality issues should be directed to the original repo. Feel free to submit pull requests for improved translations.
 
-QuickXDev交流群：625657444，欢迎进群提问，讨论问题。
+The following is a machine translation of the original README.md.
 
-## Cocos2d-Lua-Community 4.0 版本说明
-- 目前已部分适配该版本，其中LuaGameRunner（旧版中的Player）可用。这一特性的用法跟之前版本一样，都是右键 -> 在Player中运行，插件会根据引擎的目录结构自行判断是哪个版本。
-- 因为该版本已没有环境变量，也就无法从系统中获取引擎的根目录，所以要想使用4.0版本，用户必须主动设置插件quickxdev.root，即引擎的根目录。
-- 如果想同时开发3.7.x与4.0版本的项目，则在项目的工作目录中设置quickxdev.root，这样不同项目的设置就分隔开了，互不影响。
+# QuickXDev for vscode
+Powerful quick-cocos2dx development tools, currently adapted to Quick-Cocos2dx-Community version 3.7.x and partially adapted to Cocos2d-Lua-Community version 4.0.
 
-## 安装
-在vscode扩展商店中搜索"QuickXDev"即可找到。
+QuickXDev exchange group: 625657444, welcome to ask questions and discuss problems.
 
-## 特性
-- cocos2dx c++端的代码提示
-- quick lua端的代码提示
-- lua 5.1系统代码提示
-- if,while,function等snippets
-- 转到定义功能
-- 在Player中运行功能 (F6)
+## Cocos2d-Lua-Community 4.0 Release Notes
+- It is now partially adapted to this version, where LuaGameRunner (Player in the old version) is available. The usage of this feature is the same as in previous versions, right click -> Run in Player, the plugin will determine which version it is based on the directory structure of the engine.
+- Because this version no longer has environment variables, it is not possible to get the root directory of the engine from the system, so to use version 4.0, the user must actively set the plugin quickxdev.root, which is the root directory of the engine.
+- If you want to develop both 3.7.x and 4.0 version projects, set quickxdev.root in the working directory of the project, so that the settings of different projects are separated and do not affect each other.
 
-## 配置
-- quickxdev.root quick引擎的目录，如果是正常安装quick(执行了setup_win.bat/setup_mac.sh)，插件则自动获取该变量。如果是4.0版本则需要手动设置。
+## Installation
+Search for "QuickXDev" in the vscode extension store to find it.
 
-## 打开Player
-项目中任意lua文件右键 -> 在Player中运行，或者按F6，即可运行该项目。
+## Features
+- Code hints for cocos2dx c++ side
+- Code hints on the quick lua side
+- lua 5.1 system code hints
+- if, while, function, etc. fragments
+- Go to Define Features
+- Run functions in Player (F6)
 
-## 第三方库
-本插件中使用 [luaparse](https://github.com/oxyc/luaparse) 作为lua代码解析库，在此向原作者表示感谢！
+## Configuration
+- quickxdev.root quick engine directory, if it is a normal installation of quick (execution of setup_win.bat/setup_mac.sh), the plug-in automatically get this variable. If it is 4.0 version then you need to set it manually.
 
-## 几个功能的gif
-- 自动完成
+## Open Player
+Right click on any lua file in the project -> Run in Player, or press F6 to run the project.
+
+## Third Party Library
+This plugin uses [luaparse](https://github.com/oxyc/luaparse) as the lua code parsing library, and I'd like to thank the original author!
+
+## A few functional gifs
+- Automatic completion
 ![completion](https://user-images.githubusercontent.com/1720546/44968155-c290b580-af78-11e8-8d58-4e5d43a31cd7.gif)
-- 转到定义
+- Go to Definition
 ![godef](https://user-images.githubusercontent.com/1720546/44968156-c58ba600-af78-11e8-8a98-3f73c5a51b34.gif)
-- 运行Player
+- Run Player
 ![runplayer](https://user-images.githubusercontent.com/1720546/44968157-c6243c80-af78-11e8-8490-920d2db74789.gif)

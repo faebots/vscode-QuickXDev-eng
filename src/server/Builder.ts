@@ -73,9 +73,9 @@ class Builder0 {
      */
     public initWorkspace(): void {
         // 在任务栏显示提示
-        let statusText = "初始化 Quickx 项目...";
+        let statusText = "Initializing the Quickx project...";
         if (!Config.isQuickX) {
-            statusText = "初始化 lua 项目...";
+            statusText = "Initializing lua projects...";
         }
         ServerProxy.showStatusBar("$(zap)", "#00ff00");
         ServerProxy.showStatusBar(statusText);

@@ -70,7 +70,7 @@ class Config0 {
         ServerProxy.sendRequest("quickRoot", this.quickRoot);
 
         if (this._isQuickX && !this.quickRoot) {
-            ServerProxy.showMessageWarning("还没有设置Quick引擎目录!");
+            ServerProxy.showMessageWarning("No Quick Engine directory set up yet!");
         }
 
         if (!this._initSettinged) {
